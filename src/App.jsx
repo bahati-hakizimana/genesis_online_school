@@ -20,7 +20,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/genesis_online_school">
       <Routes>
         <Route path="/" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
