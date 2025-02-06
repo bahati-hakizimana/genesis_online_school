@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 const Notes = () => {
 
-  const [secondaryTab, setSecondaryTab] = useState("formIV");
+  const [secondaryTab, setSecondaryTab] = useState("OLevel");
   const [primaryTab, setPrimaryTab] = useState("stdVII");
-  const [examSeriesTab, setExamSeriesTab] = useState("formIII");
+  const [examSeriesTab, setExamSeriesTab] = useState("formI");
   const [regionalExamTab, setRegionalExamTab] = useState("formIV");
   const [primarySeriesTab, setPrimarySeriesTab] = useState("stdVII");
   const [secondarySubjectNotesTab, setSecondarySubjectNotesTab] = useState("formIV");
@@ -25,10 +25,12 @@ const Notes = () => {
     ALevel: [
      "GEOGRAPHY", "PHYSICS", "BIOLOGY", "CHEMISTRY", "MATHEMATICS", "ENGLISH"
     ],
-    formVI: ["HISTORY", "CIVICS", "GEOGRAPHY", "PHYSICS", "BIOLOGY", "CHEMISTRY", "MATHEMATICS", "COMMERCE", "BOOK KEEPING"],
-    formVII: ["HISTORY", "CIVICS", "GEOGRAPHY", "PHYSICS", "BIOLOGY", "CHEMISTRY", "MATHEMATICS", "COMMERCE", "BOOK KEEPING"],
-    formIII: ["HISTORY",  "GEOGRAPHY", "PHYSICS", "BIOLOGY", "CHEMISTRY", "MATHEMATICS"],
-    formI: ["HISTORY", "CIVICS", "GEOGRAPHY", "PHYSICS", "BIOLOGY", "CHEMISTRY", "MATHEMATICS", "COMMERCE", "BOOK KEEPING"],
+    formVI: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
+    formV: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
+    formIV: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
+    formIII: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
+    formII: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
+    formI: ["SCIENCE", "SOCIAL STUDIES", "KINYARWANDA", "MATHEMATICS", "FRENCH", "ENGLISH"],
     stdVII: [
       "SCIENCE", "SOCIAL STUDIES", "CIVIC & MORAL", "ENGLISH", "KISWAHILI", 
       "MATHEMATICS", "HISABATI", "SAYANSI", "MAARIFA JAMII", "URAI NA MAADILI"
@@ -105,9 +107,9 @@ const Notes = () => {
 
       {/* Secondary Exam Series */}
       <div className="bg-green-200 mt-8 p-4 rounded-md shadow-md">
-        <h2 className="text-lg font-bold mb-4 text-center">SECONDARY EXAM SERIES</h2>
+        <h2 className="text-lg font-bold mb-4 text-center">Primary Notes View</h2>
         <div className="flex space-x-2 border-b pb-2 justify-start overflow-x-auto">
-          {["formIII", "formI", "formVII"].map((tab) => (
+          {["formI", "formII", "formIII", "formIV", "formV", "formVI",].map((tab) => (
             <button
               key={tab}
               className={`py-1 px-3 text-sm font-semibold rounded-t-md ${examSeriesTab === tab ? "bg-white text-blue-500 border-t border-l border-r" : "text-gray-600"}`}
@@ -118,7 +120,7 @@ const Notes = () => {
           ))}
         </div>
         <div className="bg-green-100 p-4 rounded-b-md shadow-md">
-          <h3 className="text-md font-semibold mb-4 text-center">{examSeriesTab.toUpperCase()} EXAM SERIES</h3>
+          <h3 className="text-md font-semibold mb-4 text-center">{examSeriesTab.toUpperCase()} PRIMARY NOTES</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2">
             {formData[examSeriesTab]?.map((subject) => (
               <div key={subject} className="relative">
