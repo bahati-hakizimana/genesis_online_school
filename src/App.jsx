@@ -29,7 +29,7 @@ function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/exams" element={<Exams />} />
           <Route path="/downloads" element={<Download />} />
-          <Route path="/exam/:examType/:subject/:year" element={<ExamHomePage />} />
+          <Route path="/exam/:year" element={<ExamHomePage />} />
           <Route path="/subscription" element={<Subscription />} />
 
           {/* Protected routes */}
