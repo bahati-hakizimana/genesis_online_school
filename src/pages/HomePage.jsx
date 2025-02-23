@@ -699,7 +699,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const HomePage = () => {
-  const [secondaryTab, setSecondaryTab] = useState("O'Level");
+  const [secondaryTab, setSecondaryTab] = useState("A'Level");
   const [exams, setExams] = useState([]);
   const [secondaryDropdownOpen, setSecondaryDropdownOpen] = useState({});
 
