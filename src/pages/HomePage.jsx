@@ -699,7 +699,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const HomePage = () => {
-  const [secondaryTab, setSecondaryTab] = useState("OLevel");
+  const [secondaryTab, setSecondaryTab] = useState("O'Level");
   const [exams, setExams] = useState([]);
   const [secondaryDropdownOpen, setSecondaryDropdownOpen] = useState({});
 
@@ -726,9 +726,9 @@ const HomePage = () => {
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
       <div className="bg-green-200 p-4 rounded-md shadow-md">
-        <h2 className="text-lg font-bold mb-4 text-center"> EXAMS REVIEWS (OLEVEL & ALEVEL)</h2>
+        <h2 className="text-lg font-bold mb-4 text-center"> EXAMS REVIEWS (O'LEVEL & A'LEVEL)</h2>
         <div className="flex space-x-2 border-b pb-2 justify-start overflow-x-auto">
-          {["ALevel", "OLevel"].map((tab) => (
+          {["A'Level", "O'Level"].map((tab) => (
             <button
               key={tab}
               className={`py-1 px-3 text-sm font-semibold rounded-t-md ${secondaryTab === tab ? "bg-white text-blue-500 border-t border-l border-r" : "text-gray-600"}`}
