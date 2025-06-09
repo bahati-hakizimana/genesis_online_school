@@ -34,8 +34,8 @@ function Navbar() {
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">Explore Courses</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">How to Apply</Link>
 
-          <Link to="#" className="bg-green-600 text-xl text-white px-4 py-2 rounded-full font-semibold hover:bg-green-700 transition">Apply now</Link>
-          <FaShoppingCart className="text-gray-600 cursor-pointer" />
+          <Link to="#" className="bg-green-600 text-xl text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition">Apply now</Link>
+          {/* <FaShoppingCart className="text-gray-600 cursor-pointer" /> */}
         </nav>
 
         </div>

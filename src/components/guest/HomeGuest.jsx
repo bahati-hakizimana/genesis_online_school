@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Navbar from "./pages/Navbar";
 import StudStories from "./pages/StudStories";
 import Feature from "./pages/Feature";
+import Path from "./pages/Path";
 
 const HomeGuest = () =>{
     return(
@@ -13,6 +14,7 @@ const HomeGuest = () =>{
         <Navbar />
         <Hero />
         <Feature />
+        <Path />
         <Experience />
         <StudStories />
         <Footer />

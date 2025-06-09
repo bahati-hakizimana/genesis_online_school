@@ -44,11 +44,11 @@ function Hero() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-10 items-center px-6">
 
         <div className="mt-4">
-          <h1 className=" text-4xl font-bold text-center">144 courses equals unlimited opportunity</h1>
+          <h1 className=" text-4xl text-[60px] font-bold text-center">144 courses equals unlimited opportunity</h1>
         </div>
 
         <div className=" mt-2">
-          <p className=" text-bold mt-2 text-2xl text-center">
+          <p className="text-2xl text-center text-[20px] ">
             Founded as a not-for-profit with a mission to bring advanced learning to Ontarians, we make <br /> courses interactive and interesting so you can best reach your goals, whatever they may be.
           </p>
         </div>
@@ -57,7 +57,7 @@ function Hero() {
 
           <input type="text" placeholder="Search for courses, codes, subject" className=" py-2 px-4 rounded-full w-1/2 border border-gray-300" />
 
-          <button className=" bg-green-600 px-6 py-1 rounded-full text-white text-xl text-center">Search</button>
+          <button className=" bg-green-600 px-8 py-2 rounded-full text-white text-xl text-center">Search</button>
 
         </div>
       </div>
