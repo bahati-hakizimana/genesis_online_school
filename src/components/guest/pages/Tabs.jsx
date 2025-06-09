@@ -52,12 +52,12 @@ const Tabs = ({ tabs }) => {
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h2 className="text-lg font-bold text-gray-800 mb-1">{course.title}</h2>
-                <h3 className="text-lg font-bold text-gray-800 mb-1">Language of study: {course.language}</h3>
-                <p className="text-sm text-gray-600 mb-2">Type: {course.type}</p>
-                <p className=" text-[15px] text-gray-500 line-clamp-4">{course.description}</p>
+                <h2 className="text-xl font-bold text-gray-800 mb-1">{course.title}</h2>
+                <h3 className="text-xl font-bold text-gray-800 mb-1">Language of study: {course.language}</h3>
+                <p className="text-xl text-gray-600 mb-2">Type: {course.type}</p>
+                <p className=" text-xl text-gray-500 line-clamp-4">{course.description}</p>
                 <div className="mt-3 text-right">
-                  <span className="text-xs text-blue-600 font-medium">{course.form}</span>
+                  <span className="text-xl text-blue-600 font-medium">{course.form}</span>
                 </div>
               </div>
             </motion.div>

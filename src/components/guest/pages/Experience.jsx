@@ -2,6 +2,7 @@ import { MdOutlineEventNote } from "react-icons/md";
 import { GrYoga } from "react-icons/gr";
 import { GiFireSpellCast } from "react-icons/gi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ExperienceData = [
   {
@@ -65,7 +66,13 @@ const Experience = () => {
             </motion.div>
           ))}
         </div>
+
+        
       </div>
+
+      <div className=" mt-8 flex justify-center items-center ">
+            <Link to="#" className=" px-8 py-2 bg-green-600 rounded-full text-center text-white ">Learn More about Genesis online school</Link>
+        </div>
     </div>
   );
 };
