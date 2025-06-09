@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../../../assets/images/TVO.webp"; 
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -16,17 +17,17 @@ function Hero() {
             of Education.
           </p>
           <div className="flex flex-wrap items-center space-x-4">
-            <a href="#" className="text-green-600 font-semibold hover:underline">
+            <Link to="#" className="text-green-600 font-semibold hover:underline">
               Apply Now
-            </a>
+            </Link>
             <span className="text-gray-400">|</span>
-            <a href="#" className="text-green-600 font-semibold hover:underline">
+            <Link to="#" className="text-green-600 font-semibold hover:underline">
               Explore Courses
-            </a>
+            </Link>
             <span className="text-gray-400">|</span>
-            <a href="#" className="text-green-600 font-semibold hover:underline">
+            <Link to="#" className="text-green-600 font-semibold hover:underline">
               CAEC Testing
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -43,7 +44,21 @@ function Hero() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-1 gap-10 items-center px-6">
 
         <div className="mt-4">
-          <h1 className=" text-2xl font-bold text-center">144 courses equals unlimited opportunity</h1>
+          <h1 className=" text-4xl font-bold text-center">144 courses equals unlimited opportunity</h1>
+        </div>
+
+        <div className=" mt-2">
+          <p className=" text-bold mt-2 text-2xl text-center">
+            Founded as a not-for-profit with a mission to bring advanced learning to Ontarians, we make <br /> courses interactive and interesting so you can best reach your goals, whatever they may be.
+          </p>
+        </div>
+
+        <div className="mt-2 flex justify-center gap-4">
+
+          <input type="text" placeholder="Search for courses, codes, subject" className=" py-2 px-4 rounded-full w-1/2 border border-gray-300" />
+
+          <button className=" bg-green-600 px-6 py-1 rounded-full text-white text-xl text-center">Search</button>
+
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Header from "./pages/Header";
 import Hero from "./pages/Hero";
 import Navbar from "./pages/Navbar";
 import StudStories from "./pages/StudStories";
+import Feature from "./pages/Feature";
 
 const HomeGuest = () =>{
     return(
@@ -11,6 +12,7 @@ const HomeGuest = () =>{
         {/* <Header /> */}
         <Navbar />
         <Hero />
+        <Feature />
         <Experience />
         <StudStories />
         <Footer />

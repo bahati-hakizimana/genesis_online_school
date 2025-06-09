@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import { FaSearch } from 'react-icons/fa';
 
 function Header() {
@@ -10,22 +11,21 @@ function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 items-end">
-
-          <a href="#" className="text-gray-700 hover:text-black">FAQ</a>
-          <a href="#" className="text-gray-700 hover:text-black">Contact Us</a>
-          <a href="#" className="text-gray-700 hover:text-black">English</a>
+            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b cursor-pointer hover:border-blue-500">FAQ</Link>
+            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">Contact Us</Link>
+            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">English</Link>
 
           <div className="relative">
             <button
               onClick={() => setLoginDropdown(!loginDropdown)}
-              className="text-gray-700 hover:text-black focus:outline-none"
+              className="text-gray-700 text-xl hover:text-black focus:outline-none"
             >
               Login ▾
             </button>
             {loginDropdown && (
               <div className="absolute top-full right-0 mt-2 w-40 bg-white border rounded shadow-lg">
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Student Login</a>
-                <a href="#" className="block px-4 py-2 hover:bg-gray-100">Admin Login</a>
+                <Link to="#" className="block px-4 py-2 text-xl hover:bg-gray-100">Student Login</Link>
+                <Link to="#" className="block px-4 py-2 text-xl hover:bg-gray-100">Admin Login</Link>
               </div>
             )}
           </div>
