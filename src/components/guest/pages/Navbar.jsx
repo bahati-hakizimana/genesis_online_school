@@ -30,7 +30,7 @@ function Navbar() {
 
           <nav className="hidden md:flex space-x-6 items-center">
           <Link to="#" className="text-gray-700 hover:border-b text-xl hover:border-blue-500 cursor-pointer hover:text-green-500">What We Offer</Link>
-          <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">How it Works</Link>
+          <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 hover:underline cursor-pointer">How it Works</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">Explore Courses</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">How to Apply</Link>
 
