@@ -17,36 +17,38 @@ import Download from "./pages/Download";
 import Subscription from "./pages/Subscription";
 import ExamHomePage from "./pages/ExamHomePage.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import HomeGuest from "./components/guest/HomeGuest.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeLayout />}>
+        <Route path="/" element={<HomeGuest />}></Route>
+        <Route path="/stud" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/notes" element={<Notes />} />
-          <Route path="/exams" element={<Exams />} />
-          <Route path="/downloads" element={<Download />} />
-          <Route path="/exam/:year" element={<ExamHomePage />} />
-          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/stud/about-us" element={<AboutUs />} />
+          <Route path="/stud/books" element={<Books />} />
+          <Route path="/stud/notes" element={<Notes />} />
+          <Route path="/stud/exams" element={<Exams />} />
+          <Route path="/stud/downloads" element={<Download />} />
+          <Route path="/stud/exam/:year" element={<ExamHomePage />} />
+          <Route path="/stud/subscription" element={<Subscription />} />
 
           {/* Protected routes */}
           <Route
-            path="/exam-content/:id"
+            path="/stud/exam-content/:id"
             element={
               <ProtectedRoute element={ExamPage} />
             }
           />
           <Route
-            path="/books-content/:id"
+            path="/stud/books-content/:id"
             element={
               <ProtectedRoute element={BooksPage} />
             }
           />
           <Route
-            path="/notes-content/:id"
+            path="/stud/notes-content/:id"
             element={
               <ProtectedRoute element={NotesPage} />
             }

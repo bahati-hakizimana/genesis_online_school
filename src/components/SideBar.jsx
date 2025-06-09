@@ -19,12 +19,12 @@ const SideBar = (props) => {
 
     const menuItems = [
         {id: 3, name: "Home", icon: <FaHome/>, route: "/"},
-        {id: 1, name: "About Us", icon: <FaInfoCircle/>, route: "/about-us"},
-        {id: 4, name: "Books", icon: <FaBook/>, route: "/books"},
-        {id: 5, name: "Notes", icon: <FaRegFileAlt/>, route: "/notes"},
-        {id: 6, name: "Exams", icon: <FaFileAlt/>, route: "/exams"},
-        {id: 7, name: "Downloads", icon: <FaDownload/>, route: "/downloads"},
-        {id: 8, name: "My Plan", icon: <FaBriefcase/>, route: "/subscription"},
+        {id: 1, name: "About Us", icon: <FaInfoCircle/>, route: "/stud/about-us"},
+        {id: 4, name: "Books", icon: <FaBook/>, route: "/stud/books"},
+        {id: 5, name: "Notes", icon: <FaRegFileAlt/>, route: "/stud/notes"},
+        {id: 6, name: "Exams", icon: <FaFileAlt/>, route: "/stud/exams"},
+        {id: 7, name: "Downloads", icon: <FaDownload/>, route: "/stud/downloads"},
+        {id: 8, name: "My Plan", icon: <FaBriefcase/>, route: "/stud/subscription"},
     ];
 
     const handleNavigation = (itemName, route) => {
