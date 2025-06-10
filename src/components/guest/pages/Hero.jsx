@@ -8,10 +8,10 @@ function Hero() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-6">
         {/* Left Side */}
         <div className="space-y-6">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-[50px] sm:text-5xl font-bold text-gray-800 leading-tight">
             Be Who You Are <br /> Meant To Be
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-xl">
             Earn your OSSD or take any of the 140+ affordable and flexible
             classes through the online learning partner of the Rwanda Ministry
             of Education.

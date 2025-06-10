@@ -11,9 +11,9 @@ function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 items-end">
-            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b cursor-pointer hover:border-blue-500">FAQ</Link>
-            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">Contact Us</Link>
-            <Link to="" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">English</Link>
+            <Link to="/" className="text-gray-700 text-xl hover:text-green-500 hover:border-b cursor-pointer hover:border-blue-500">Home</Link>
+            <Link to="/contactus" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">Contact Us</Link>
+            <Link to="/fqa" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 cursor-pointer">FQA</Link>
 
           <div className="relative">
             <button

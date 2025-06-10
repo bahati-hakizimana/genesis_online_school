@@ -10,7 +10,7 @@ function Footer() {
     <footer className="bg-gray-900 text-white w-full py-12 h-[100%]">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Logo and About */}
-        <div>
+        <div className=' space-y-6 '>
            <Link to="/" className=' cursor-pointer'>
           <img className='w-10 h-10' src={logo} alt="Offical logo" />
           <div className="flex items-center space-x-1">
@@ -19,15 +19,15 @@ function Footer() {
           <span className="text-teal-500 text-2xl font-bold">School</span>
         </div>
         </Link>
-        <p>
+        <p className=' text-xl font-semibold '>
             Empowering learners with flexible, affordable, and respected online education since 2023.
           </p>
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className=' space-y-6 '>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-xl text-gray-300">
             <li><a href="/" className="hover:text-white">Home</a></li>
             <li><a href="/about" className="hover:text-white">About Us</a></li>
             <li><a href="/courses" className="hover:text-white">Courses</a></li>
@@ -36,9 +36,9 @@ function Footer() {
         </div>
 
         {/* Resources */}
-        <div>
+        <div className=' space-y-6 '>
           <h3 className="text-xl font-semibold mb-4">Resources</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
+          <ul className="space-y-2 text-xl text-gray-300">
             <li><a href="/blog" className="hover:text-white">Blog</a></li>
             <li><a href="/faq" className="hover:text-white">FAQs</a></li>
             <li><a href="/terms" className="hover:text-white">Terms & Conditions</a></li>
@@ -47,8 +47,8 @@ function Footer() {
         </div>
 
         {/* Social Media */}
-        <div>
-          <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+        <div className=' space-y-6 '>
+          <h3 className="text-xl font-semibold">Follow Us</h3>
           <div className="flex space-x-4">
             <a href="#" className="text-gray-300 hover:text-white text-xl"><FaFacebookF /></a>
             <a href="#" className="text-gray-300 hover:text-white text-xl"><FaTwitter /></a>
@@ -59,7 +59,7 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-xl text-gray-400">
         © {currentYear} All rights reserved | Genesis Online School
       </div>
     </footer>

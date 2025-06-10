@@ -18,12 +18,15 @@ import Subscription from "./pages/Subscription";
 import ExamHomePage from "./pages/ExamHomePage.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import HomeGuest from "./components/guest/HomeGuest.jsx";
+import WhatOffer from "./components/guest/pages/mainpages/WhatOffer.jsx";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeGuest />}></Route>
+        <Route path="/" element={<HomeGuest />}>
+        </Route>
+         <Route path="/offer" element={<WhatOffer />} />
         <Route path="/stud" element={<HomeLayout />}>
           <Route index element={<HomePage />} />
           <Route path="/stud/about-us" element={<AboutUs />} />

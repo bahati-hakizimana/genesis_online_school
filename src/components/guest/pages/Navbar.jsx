@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex md:gap-8 justify-between items-center">
         {/* Logo */}
 
         <Link to="/" className=' cursor-pointer'>
@@ -29,7 +29,7 @@ function Navbar() {
           <Header />
 
           <nav className="hidden md:flex space-x-6 items-center">
-          <Link to="#" className="text-gray-700 hover:border-b text-xl hover:border-blue-500 cursor-pointer hover:text-green-500">What We Offer</Link>
+          <Link to="offer" className="text-gray-700 hover:border-b text-xl hover:border-blue-500 cursor-pointer hover:text-green-500">What We Offer</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500 hover:underline cursor-pointer">How it Works</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">Explore Courses</Link>
           <Link to="#" className="text-gray-700 text-xl hover:text-green-500 hover:border-b hover:border-blue-500">How to Apply</Link>
